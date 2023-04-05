@@ -53,8 +53,8 @@ const buttonClick =(color:string)=>{
     }, 2000);
     setTimeout(() => {
       setMessage('Continue your winning streak :)')
+      loadAll()
     }, 2000);
-    loadAll()
   }
     else{
       setMessage('Wrong Answer')

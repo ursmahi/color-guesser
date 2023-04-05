@@ -26,11 +26,13 @@
     color: rgb(106, 84, 248);
     background-color: moccasin;
 }
+@media (hover: hover){
 .btn:hover{
     cursor: pointer;
     background-color: rgba(0, 83, 152, 0.556);
     border: 1px solid snow;
     color: black;
+}
 }
 .msgclass{
     height: 20px;

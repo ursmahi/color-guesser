@@ -5,6 +5,7 @@ function App() {
   const [displayColor, setDisplayColor] = useState<string>('')
   const [answerList, setAnswerList] = useState<string[]>([])
   const [message, setMessage] = useState<string>('')
+  const [countStreak, setCountStreak] = useState<number>(0)
   const color = [
     "0",
     "1",
@@ -55,8 +56,10 @@ const buttonClick =(color:string)=>{
       setMessage('Continue your winning streak :)')
       loadAll()
     }, 2000);
+    setCountStreak(countStreak+1)
   }
     else{
+      setCountStreak(0)
       setMessage('Wrong Answer')
       setTimeout(() => {
         setMessage('')
@@ -86,6 +89,10 @@ const buttonClick =(color:string)=>{
           :
           <p style={{color:'green'}} className="msgclass">{message}</p> 
         }
+        <center>
+
+<h3 style={{fontFamily:'monospace'}}>Current Streak : {countStreak}</h3>
+        </center>
       </div>
 
     </div>

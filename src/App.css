@@ -1,0 +1,38 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.color-box{
+ height: 250px;
+ width: 350px;
+ border-radius: 20px;
+}
+.btns{
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    padding: 5px;
+    border-radius: 5px;
+    margin: none;
+    border: 1px solid gray;
+    width: 100px;
+    height: 40px;
+    color: rgb(106, 84, 248);
+    background-color: moccasin;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 83, 152, 0.556);
+    border: 1px solid snow;
+    color: black;
+}
+.msgclass{
+    height: 20px;
+    font-size: larger;
+}
